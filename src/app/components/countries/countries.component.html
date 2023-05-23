@@ -1,0 +1,25 @@
+<div>
+<table border="1" cellspacing="0px" cellpadding="5px" align="center">
+    <thead style="background-color: rgb(255, 174, 0); text-align: center;">
+        <tr>
+            <td><b>Capital City</b></td>
+            <td><b>Continents</b></td>
+            <td><b>Currencies</b></td>
+            <td><b>Flag</b></td>
+         </tr>
+    </thead>
+    <tbody align="center">
+        <tr *ngFor="let c of data">
+            <td>{{c.capital}}</td>
+            <td>{{c.continents}}</td>
+            <td>{{getCurrencyName(c)}}
+            </td>
+            <td><img src="{{c.flags.svg}}" alt="Flag" width="50"></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<div>
+   <h2></h2> 
+</div>
